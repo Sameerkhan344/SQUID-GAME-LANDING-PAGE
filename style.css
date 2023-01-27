@@ -1,0 +1,268 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: squid;
+  src: url(./fonts/game_of_squids/Game\ Of\ Squids.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+#mright #img1 {
+  position: absolute;
+  height: 50vw;
+  width: 52vw;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-size: cover;
+  background-position: center;
+}
+#mright #img2 {
+  position: absolute;
+  height: 50vw;
+  width: 50vw;
+  right: 0%;
+  background-size: cover;
+  background-position: center;
+}
+#mright #img3 {
+  position: absolute;
+  height: 50vw;
+  width: 42vw;
+  left: 30%;
+  z-index: 9;
+  background-size: cover;
+  background-position: center;
+}
+#img3::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: red;
+}
+#nav {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-family: squid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vw 3vw;
+  z-index: 9;
+}
+#navcntr ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  gap: 100px;
+}
+#navcntr ul li a {
+  text-decoration: none;
+}
+#nav img {
+  width: 7vw;
+}
+#navright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  background-color: black;
+  padding: 6px 70px;
+}
+#navright a {
+  text-decoration: none;
+}
+#center-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#center-content #logo {
+  position: absolute;
+  top: 9%;
+  left: 4%;
+  z-index: 999999;
+  width: 30vw;
+}
+#center-content #guard {
+  position: absolute;
+  left: 25%;
+  height: 44vw;
+  z-index: 99999;
+}
+#center-content #logo-div h1 {
+  position: absolute;
+  top: 57%;
+  left: 25%;
+  font-family: gilroy;
+  font-size: 0.7vw;
+  z-index: 9999999;
+  border-bottom: 3px solid rgb(255 57 90);
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  mix-blend-mode: difference;
+}
+#center-content #logo-div h1:hover {
+  border-bottom: 3px solid rgb(34, 255, 0);
+  height: 20px;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  width: 15%;
+  font-family: gilroy;
+  z-index: 999999;
+}
+#text h5 {
+  margin-bottom: 10px;
+  font-family: squid;
+  letter-spacing: 2px;
+}
+#text p {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+#circle {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+#lin-cir {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#line {
+  position: absolute;
+  right: 15%;
+  width: 100px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.cir {
+  position: absolute;
+  right: 10%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  /* color: #fff; */
+  border: 2px solid #fff;
+  margin-top: 150px;
+}
+#btmnav {
+  font-family: squid;
+  position: absolute;
+  z-index: 999999;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+  background-color: rgb(0 0 0 / 62%);
+}
+#btmnav #icon > i {
+  font-size: 80px;
+}
+#icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: squid;
+  gap: 20px;
+}
+#icon h4 {
+  font-size: 20px;
+}
+#btmnav #btm-cntr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+#btmnav #btm-cntr a {
+  text-decoration: none;
+}
+#btm-cntr h6 {
+  text-align: center;
+}
+#arrows i {
+  margin-left: 50px;
+  font-size: 40px;
+}
+video {
+  position: absolute;
+  width: 30vw;
+  top: 20%;
+  right: 70%;
+  z-index: 999999;
+}
+#guard2 {
+  position: absolute;
+  z-index: 99999;
+  right: 4%;
+  top: 60%;
+  width: 30vw;
+}
