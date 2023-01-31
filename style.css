@@ -27,6 +27,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: rgb(0, 0, 0);
+  overflow:hidden;
 }
 #mright #img1 {
   position: absolute;
